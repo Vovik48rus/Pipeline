@@ -12,14 +12,14 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0.000 ns"></ZoomStartTime>
-      <ZoomEndTime time="701.165 ns"></ZoomEndTime>
-      <Cursor1Time time="30.000 ns"></Cursor1Time>
+      <ZoomEndTime time="790.001 ns"></ZoomEndTime>
+      <Cursor1Time time="790.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="404"></NameColumnWidth>
-      <ValueColumnWidth column_width="155"></ValueColumnWidth>
+      <ValueColumnWidth column_width="149"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="8" />
+   <WVObjectSize size="7" />
    <wvobject fp_name="/test/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -47,9 +47,210 @@
    <wvobject fp_name="group13" type="group">
       <obj_property name="label">top</obj_property>
       <obj_property name="DisplayName">label</obj_property>
-   </wvobject>
-   <wvobject fp_name="group14" type="group">
-      <obj_property name="label">pipeline</obj_property>
-      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/test/top_unit/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/top_unit/reset" type="logic">
+         <obj_property name="ElementShortName">reset</obj_property>
+         <obj_property name="ObjectShortName">reset</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/top_unit/fifo_out_ready" type="logic">
+         <obj_property name="ElementShortName">fifo_out_ready</obj_property>
+         <obj_property name="ObjectShortName">fifo_out_ready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/top_unit/valid_in" type="logic">
+         <obj_property name="ElementShortName">valid_in</obj_property>
+         <obj_property name="ObjectShortName">valid_in</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/top_unit/data_in" type="array">
+         <obj_property name="ElementShortName">data_in[7:0]</obj_property>
+         <obj_property name="ObjectShortName">data_in[7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/top_unit/data_out" type="array">
+         <obj_property name="ElementShortName">data_out[7:0]</obj_property>
+         <obj_property name="ObjectShortName">data_out[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/top_unit/valid_out" type="logic">
+         <obj_property name="ElementShortName">valid_out</obj_property>
+         <obj_property name="ObjectShortName">valid_out</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/top_unit/valid_stages" type="array">
+         <obj_property name="ElementShortName">valid_stages[15:0]</obj_property>
+         <obj_property name="ObjectShortName">valid_stages[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/top_unit/DATA_SIZE" type="array">
+         <obj_property name="ElementShortName">DATA_SIZE[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DATA_SIZE[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/test/top_unit/STAGE_COUNT" type="array">
+         <obj_property name="ElementShortName">STAGE_COUNT[31:0]</obj_property>
+         <obj_property name="ObjectShortName">STAGE_COUNT[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="group14" type="group">
+         <obj_property name="label">pipeline</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/test/top_unit/pipeline_unit/clk" type="logic">
+            <obj_property name="ElementShortName">clk</obj_property>
+            <obj_property name="ObjectShortName">clk</obj_property>
+         </wvobject>
+         <wvobject fp_name="/test/top_unit/pipeline_unit/reset" type="logic">
+            <obj_property name="ElementShortName">reset</obj_property>
+            <obj_property name="ObjectShortName">reset</obj_property>
+         </wvobject>
+         <wvobject fp_name="/test/top_unit/pipeline_unit/fifo_out_ready" type="logic">
+            <obj_property name="ElementShortName">fifo_out_ready</obj_property>
+            <obj_property name="ObjectShortName">fifo_out_ready</obj_property>
+         </wvobject>
+         <wvobject fp_name="/test/top_unit/pipeline_unit/valid_in" type="logic">
+            <obj_property name="ElementShortName">valid_in</obj_property>
+            <obj_property name="ObjectShortName">valid_in</obj_property>
+         </wvobject>
+         <wvobject fp_name="/test/top_unit/pipeline_unit/valid_stages_in" type="array">
+            <obj_property name="ElementShortName">valid_stages_in[15:0]</obj_property>
+            <obj_property name="ObjectShortName">valid_stages_in[15:0]</obj_property>
+            <obj_property name="isExpanded"></obj_property>
+         </wvobject>
+         <wvobject fp_name="/test/top_unit/pipeline_unit/data_in" type="array">
+            <obj_property name="ElementShortName">data_in[7:0]</obj_property>
+            <obj_property name="ObjectShortName">data_in[7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/test/top_unit/pipeline_unit/data_out" type="array">
+            <obj_property name="ElementShortName">data_out[7:0]</obj_property>
+            <obj_property name="ObjectShortName">data_out[7:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/test/top_unit/pipeline_unit/pipe_reg" type="array">
+            <obj_property name="ElementShortName">pipe_reg[0:15][7:0]</obj_property>
+            <obj_property name="ObjectShortName">pipe_reg[0:15][7:0]</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="isExpanded"></obj_property>
+            <wvobject fp_name="/test/top_unit/pipeline_unit/pipe_reg[0]" type="array">
+               <obj_property name="ElementShortName">[0][7:0]</obj_property>
+               <obj_property name="ObjectShortName">[0][7:0]</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/test/top_unit/pipeline_unit/pipe_reg[1]" type="array">
+               <obj_property name="ElementShortName">[1][7:0]</obj_property>
+               <obj_property name="ObjectShortName">[1][7:0]</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/test/top_unit/pipeline_unit/pipe_reg[2]" type="array">
+               <obj_property name="ElementShortName">[2][7:0]</obj_property>
+               <obj_property name="ObjectShortName">[2][7:0]</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/test/top_unit/pipeline_unit/pipe_reg[3]" type="array">
+               <obj_property name="ElementShortName">[3][7:0]</obj_property>
+               <obj_property name="ObjectShortName">[3][7:0]</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/test/top_unit/pipeline_unit/pipe_reg[4]" type="array">
+               <obj_property name="ElementShortName">[4][7:0]</obj_property>
+               <obj_property name="ObjectShortName">[4][7:0]</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/test/top_unit/pipeline_unit/pipe_reg[5]" type="array">
+               <obj_property name="ElementShortName">[5][7:0]</obj_property>
+               <obj_property name="ObjectShortName">[5][7:0]</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/test/top_unit/pipeline_unit/pipe_reg[6]" type="array">
+               <obj_property name="ElementShortName">[6][7:0]</obj_property>
+               <obj_property name="ObjectShortName">[6][7:0]</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/test/top_unit/pipeline_unit/pipe_reg[7]" type="array">
+               <obj_property name="ElementShortName">[7][7:0]</obj_property>
+               <obj_property name="ObjectShortName">[7][7:0]</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/test/top_unit/pipeline_unit/pipe_reg[8]" type="array">
+               <obj_property name="ElementShortName">[8][7:0]</obj_property>
+               <obj_property name="ObjectShortName">[8][7:0]</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/test/top_unit/pipeline_unit/pipe_reg[9]" type="array">
+               <obj_property name="ElementShortName">[9][7:0]</obj_property>
+               <obj_property name="ObjectShortName">[9][7:0]</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/test/top_unit/pipeline_unit/pipe_reg[10]" type="array">
+               <obj_property name="ElementShortName">[10][7:0]</obj_property>
+               <obj_property name="ObjectShortName">[10][7:0]</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/test/top_unit/pipeline_unit/pipe_reg[11]" type="array">
+               <obj_property name="ElementShortName">[11][7:0]</obj_property>
+               <obj_property name="ObjectShortName">[11][7:0]</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/test/top_unit/pipeline_unit/pipe_reg[12]" type="array">
+               <obj_property name="ElementShortName">[12][7:0]</obj_property>
+               <obj_property name="ObjectShortName">[12][7:0]</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/test/top_unit/pipeline_unit/pipe_reg[13]" type="array">
+               <obj_property name="ElementShortName">[13][7:0]</obj_property>
+               <obj_property name="ObjectShortName">[13][7:0]</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/test/top_unit/pipeline_unit/pipe_reg[14]" type="array">
+               <obj_property name="ElementShortName">[14][7:0]</obj_property>
+               <obj_property name="ObjectShortName">[14][7:0]</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/test/top_unit/pipeline_unit/pipe_reg[15]" type="array">
+               <obj_property name="ElementShortName">[15][7:0]</obj_property>
+               <obj_property name="ObjectShortName">[15][7:0]</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="/test/top_unit/pipeline_unit/DATA_SIZE" type="array">
+            <obj_property name="ElementShortName">DATA_SIZE[31:0]</obj_property>
+            <obj_property name="ObjectShortName">DATA_SIZE[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/test/top_unit/pipeline_unit/STAGE_COUNT" type="array">
+            <obj_property name="ElementShortName">STAGE_COUNT[31:0]</obj_property>
+            <obj_property name="ObjectShortName">STAGE_COUNT[31:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group23" type="group">
+         <obj_property name="label">valid_chain</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/test/top_unit/valid_chain_unit/clk" type="logic">
+            <obj_property name="ElementShortName">clk</obj_property>
+            <obj_property name="ObjectShortName">clk</obj_property>
+         </wvobject>
+         <wvobject fp_name="/test/top_unit/valid_chain_unit/reset" type="logic">
+            <obj_property name="ElementShortName">reset</obj_property>
+            <obj_property name="ObjectShortName">reset</obj_property>
+         </wvobject>
+         <wvobject fp_name="/test/top_unit/valid_chain_unit/valid_in" type="logic">
+            <obj_property name="ElementShortName">valid_in</obj_property>
+            <obj_property name="ObjectShortName">valid_in</obj_property>
+         </wvobject>
+         <wvobject fp_name="/test/top_unit/valid_chain_unit/fifo_out_ready" type="logic">
+            <obj_property name="ElementShortName">fifo_out_ready</obj_property>
+            <obj_property name="ObjectShortName">fifo_out_ready</obj_property>
+         </wvobject>
+         <wvobject fp_name="/test/top_unit/valid_chain_unit/valid_out" type="array">
+            <obj_property name="ElementShortName">valid_out[15:0]</obj_property>
+            <obj_property name="ObjectShortName">valid_out[15:0]</obj_property>
+            <obj_property name="isExpanded"></obj_property>
+         </wvobject>
+         <wvobject fp_name="/test/top_unit/valid_chain_unit/back_tracking" type="array">
+            <obj_property name="ElementShortName">back_tracking[15:0]</obj_property>
+            <obj_property name="ObjectShortName">back_tracking[15:0]</obj_property>
+            <obj_property name="isExpanded"></obj_property>
+         </wvobject>
+         <wvobject fp_name="/test/top_unit/valid_chain_unit/STAGE_COUNT" type="array">
+            <obj_property name="ElementShortName">STAGE_COUNT[31:0]</obj_property>
+            <obj_property name="ObjectShortName">STAGE_COUNT[31:0]</obj_property>
+         </wvobject>
+      </wvobject>
    </wvobject>
 </wave_config>

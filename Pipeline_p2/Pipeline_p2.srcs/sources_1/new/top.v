@@ -33,7 +33,7 @@ valid_chain #(
     .reset(reset),
     .valid_in(valid_in),
     .fifo_out_ready(fifo_out_ready),
-    .valid_out(valid_stages)
+    .back_tracking(valid_stages)
 );
 
 assign valid_out = valid_stages[STAGE_COUNT - 1];

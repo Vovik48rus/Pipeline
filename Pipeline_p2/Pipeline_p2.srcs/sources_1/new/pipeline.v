@@ -19,7 +19,7 @@ begin
     begin
         pipe_reg[0] <= 0;
     end
-    else if (fifo_out_ready && valid_in)
+    else if (valid_in && valid_stages_in[0])
     begin
         pipe_reg[0] <= data_in;
     end
@@ -37,7 +37,7 @@ generate
             begin
                 pipe_reg[i] <= 0;
             end
-            else if (fifo_out_ready && valid_stages_in[i - 1])
+            else if (valid_stages_in[i - 1])
             begin
                 pipe_reg[i] <= pipe_reg[i - 1] + 1;
             end

@@ -1,2 +1,2 @@
 ## Полученные сигналы
-![](./imgs/Pipeline1.png)
+![](./imgs/Pipeline2.png)
